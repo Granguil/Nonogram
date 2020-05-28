@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Nonogramme</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div style="display:flex;justify-content:space-between">
+            <table id="test" ></table>
+            <div style="width:40%">
+                <button id="verif">Vérifier Grille</button><br><br><br><br>
+                <input id="col" type="number" placeholder="colonne"><br>
+                <input id="ligne" type="number" placeholder="ligne"><br>
+                <button id="np">Nouvelle Partie</button>
+            </div>
+        </div>
+        
+        <script src="jquery-3.3.1.js"></script>
+        <script src="multiselect.js"></script>
+        <script src="creation.js"></script>
+        <script src="verification.js"></script>
+        <script>
+            let grille;
+            let col=5;
+            let ligne=5;
+            let indligne;
+            let indcol;
+            let grillejeu;
+            let debut;
+            creationGrille();
+            
+        </script>
+    </body>
+</html>
